@@ -1,0 +1,123 @@
+.banner {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.banner-content {
+  padding-top: 15vh;
+  align-content: center;
+  text-align: center;
+}
+
+.banner-content h1 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 10vw;
+  text-align: center;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+}
+
+.banner-content p {
+  color: #477890;
+  font-family: 'EB Garamond', serif;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.btn-medium {
+  color: white;
+  border: 1px solid #000000;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+}
+.btn-medium:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  height: 175px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+.card-description {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+}
+.card-description p {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  opacity: 0.8;
+  font-weight: ;
+}
+
+/* Add a background color and some padding around the form */
+.contact_container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-right: 20vw;
+  margin-left: 20vw;
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 3px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: 'EB Garamond', serif;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'EB Garamond', serif;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+  margin-top: 55px;
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+}
