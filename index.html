@@ -63,13 +63,16 @@
 
       <div class="contact_container">
         <p>Se quiser um orçamento, por favor preencha o formulário abaixo ou envie um email para <b>Ola@PalhinhasPremium.com</b>.</p>
-        <form action="action_page.php">
+        <form name="contactform" method="post" action="send_form_email.php">
 
-          <label for="fname">Nome</label>
-          <input type="text" id="fname" name="firstname" placeholder="">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="">
 
           <label for="company">Empresa</label>
           <input type="text" id="company" name="company" placeholder="">
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="">
 
           <label for="region">Região</label>
           <select id="region" name="region">
@@ -81,26 +84,98 @@
             <option value="centro">Centro</option>
           </select>
 
-          <label for="produto">Produto</label>
-          <select id="produto" name="produto">
+          <label for="product">Tipo de palhinha</label>
+          <select id="product" name="product">
             <option value="diretoeprata">Em metal</option>
             <option value="dobradaeprata">Em metal, dobrada</option>
             <option value="diretoecolorida">Em metal, com cor</option>
             <option value="dobradaecolorida">Em metal, dobrada e com cor</option>
           </select>
 
-          <label for="quantidade">Quantidade</label>
-          <input type="text" id="quantidade" name="quantidade" placeholder="">
+          <label for="quantity">Quantidade</label>
+          <input type="text" id="quantity" name="quantity" placeholder="">
 
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" placeholder="Mais detalhes..." style="height:100px"></textarea>
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" placeholder="Mais detalhes..." style="height:100px"></textarea>
 
           <input type="submit" value="Submit">
-
         </form>
       </div>
 
+ <!--      <form name="contactform" method="post" action="send_form_email.php">
+        <table width="450px">
+        <tr>
+         <td valign="top">
+          <label for="first_name">Nome *</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="first_name" maxlength="50" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top"">
+          <label for="last_name">Empresa *</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="last_name" maxlength="50" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <label for="email">Email *</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="email" maxlength="80" size="30">
+         </td>
+        </tr>
 
+        <tr>
+         <td valign="top">
+          <label for="telephone">Região de Portugal</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="telephone" maxlength="30" size="30">
+         </td>
+        </tr>
+
+       <tr>
+        <td valign="top">
+         <label for="produto">Produto</label>
+         </td>
+         <td valign="top">
+          <select id="produto" name="produto">
+            <option value="diretoeprata">Em metal</option>
+            <option value="dobradaeprata">Em metal, dobrada</option>
+            <option value="diretoecolorida">Em metal, com cor</option>
+            <option value="dobradaecolorida">Em metal, dobrada e com cor</option>
+          </select>
+        </td>
+       </tr>
+        <tr>
+         <td valign="top">
+          <label for="quantidade">Quantidade</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="quantidade" maxlength="30" size="30">
+         </td>
+        </tr>
+
+        <tr>
+         <td valign="top">
+          <label for="comments">Mensagem *</label>
+         </td>
+         <td valign="top">
+          <textarea  name="comments" maxlength="2000" cols="25" rows="6"></textarea>
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2" style="text-align:center">
+          <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+         </td>
+        </tr>
+        </table>
+        </form>
+ -->
     </div>
     <div class="footer">
       <p>Uma empresa Portuensa com uma missão global.</p>
